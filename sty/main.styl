@@ -5,7 +5,7 @@ vendor-prefixes ?= webkit moz o ms official
 @import guide
 @import vendor
 @import mixins
-//@import /inc/*
+@import '/inc/*'
 
 c = {}
 for key, value in data.colors
@@ -23,3 +23,5 @@ body
 
 .container
   background-color: c.grey1
+
+@import index

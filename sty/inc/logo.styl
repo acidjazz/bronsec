@@ -1,0 +1,21 @@
+
+.t
+  transform-origin 50% 50%
+  opacity 1
+
+.t
+  animation rightslide 2s 0s linear alternate infinite
+  for num in 0..12
+    &:nth-child({num})
+      animation-delay unit(num*0.1, 's')
+  
+@keyframes rightslide
+  0%
+    opacity 0
+    transform rotate(180deg)
+  10%
+    opacity 1
+    transform rotate(0deg)
+  100%
+    opacity 1
+    transform rotate(0deg)
