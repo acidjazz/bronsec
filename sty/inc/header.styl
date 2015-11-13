@@ -12,15 +12,18 @@
       height inherit
   > .menu
     float left
-    margin 0 0 -1px 20px
+    margin 0 0 -2px 20px
     > .item
       cursor pointer
       display inline-block
-      padding 25px 20px 21px 20px
+      padding 25px 10px 21px 10px
+      margin 0 -3px
       font f_copy2
       text-transform uppercase
+      transition border 0.2s linear
+      border-bottom: 1px solid transparent
       &:hover
-        text-decoration underlin
+        border-bottom: 3px solid rgba(c.purple1, 0.25)
       &.active
         font-weight bold
-        border-bottom: 1px solid c.purple1
+        border-bottom: 3px solid c.purple1

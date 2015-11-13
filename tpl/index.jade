@@ -4,6 +4,12 @@ block content
   .index 
     .logo
 
+    .about
+      .copy
+        each p in data.about.copy
+          p=p
+
+
   script(type='text/javascript').
     function loadercomplete() {
       Loader.load('./jst/index.js', 'Index');
