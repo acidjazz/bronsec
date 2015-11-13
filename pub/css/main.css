@@ -68,6 +68,9 @@
   border-bottom: 1px solid #f2f2f2;
   padding: 0px 20px;
   margin: 0 0 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
 }
 .header > .inner {
   max-width: 1200px;
@@ -366,13 +369,17 @@ body {
   background-color: #fff;
 }
 .index {
-  padding: 20px;
+  min-height: 2000px;
+  padding: 80px 20px 20px 20px;
 }
 .index > .logo {
   background-image: url("/img/bronsec.png");
   width: 578px;
   height: 178px;
   margin: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .index > .about {
   padding: 20px 60px;
@@ -380,4 +387,23 @@ body {
   margin: auto;
   font-size: 20px;
   line-height: 30px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .index {
+    padding: 80px 10px 10px 10px;
+  }
+  .index > .logo {
+    width: 306px;
+    height: 110px;
+    -webkit-background-size: 115%;
+    -moz-background-size: 115%;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .index > .about {
+    padding: 0px 20px;
+    line-height: 20px;
+    font-size: 18px;
+  }
 }

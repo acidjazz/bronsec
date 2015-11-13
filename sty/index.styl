@@ -1,13 +1,31 @@
 .index
-  padding 20px
+  min-height 2000px
+  padding 80px 20px 20px 20px
   > .logo
     background-image url(/img/bronsec.png)
     width 578px
     height 178px
     margin auto
+    background-size cover
   > .about
     padding 20px 60px
     max-width 960px
     margin auto
     font-size 20px
     line-height 30px
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .index
+    padding 80px 10px 10px 10px
+    > .logo
+      width 306px
+      height 110px
+      background-size 115%
+      background-repeat no-repeat
+      background-position 50% 50%
+
+    > .about
+      padding 0px 20px
+      line-height 20px
+      font-size 18px
+  
