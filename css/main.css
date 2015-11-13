@@ -390,10 +390,10 @@ body {
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
-    padding: 80px 10px 10px 10px;
+    padding: 110px 10px 10px 10px;
   }
   .index > .logo {
-    width: 306px;
+    width: 375px;
     height: 110px;
     -webkit-background-size: 115%;
     -moz-background-size: 115%;
