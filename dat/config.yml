@@ -3,5 +3,6 @@ index: true
 meta: 
   title: "BronSec Inc"
   description: "Strategic security solutions"
+  image: '/img/logo1.png'
 sections: 
   - "guide"
