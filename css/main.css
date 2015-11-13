@@ -58,6 +58,9 @@
 .guide > .sections > .section > .font.font_f_copy {
   font: 16px Bookman Old Style, Verdana;
 }
+.guide > .sections > .section > .font.font_f_copy2 {
+  font: 20px Bookman Old Style, Verdana;
+}
 .guide > .sections > .section > .font.font_f_h1 {
   font: 32px Bookman Old Style, Verdana;
 }
@@ -78,18 +81,21 @@
 }
 .header > .menu {
   float: left;
-  margin: 20px 0 0 20px;
+  margin: 0 0 -1px 20px;
 }
 .header > .menu > .item {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 25px 20px 21px 20px;
+  font: 20px Bookman Old Style, Verdana;
+  text-transform: uppercase;
 }
 .header > .menu > .item:hover {
   text-decoration: underlin;
 }
 .header > .menu > .item.active {
   font-weight: bold;
+  border-bottom: 1px solid #d300ff;
 }
 .t {
   -webkit-transform-origin: 50% 50%;
