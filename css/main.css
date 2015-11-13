@@ -397,18 +397,18 @@ body {
 }
 .index > .section.about > .inner > .photo {
   float: left;
-  height: 650px;
+  height: 350px;
   width: 50%;
 }
 .index > .section.about > .inner > .photo > .inner {
   background-image: url("/img/josha-suit.jpg");
   margin: 20px;
   height: 100%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 18%;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
