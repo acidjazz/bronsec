@@ -381,12 +381,34 @@ body {
   -moz-background-size: cover;
   background-size: cover;
 }
-.index > .about {
+.index > .section {
+  border-top: 1px solid #f2f2f2;
   padding: 20px 60px;
-  max-width: 960px;
-  margin: auto;
   font-size: 20px;
   line-height: 30px;
+}
+.index > .section > .inner {
+  max-width: 960px;
+  margin: auto;
+}
+.index > .section.about > .inner > .copy {
+  float: left;
+  width: 50%;
+}
+.index > .section.about > .inner > .photo {
+  float: left;
+  height: 650px;
+  width: 50%;
+}
+.index > .section.about > .inner > .photo > .inner {
+  background-image: url("/img/josha-suit.jpg");
+  margin: 20px;
+  height: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
@@ -401,7 +423,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  .index > .about {
+  .index > .section {
     padding: 0px 20px;
     line-height: 20px;
     font-size: 18px;
