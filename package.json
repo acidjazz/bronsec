@@ -1,0 +1,22 @@
+{
+  "name": "bronsec",
+  "version": "1.0.0",
+  "description": "strategic security solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acidjazz/bronsec.git"
+  },
+  "author": "Kevin Olson <acidjazz@gmail.com> (http://ke.vin.so/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acidjazz/bronsec/issues"
+  },
+  "homepage": "https://github.com/acidjazz/bronsec#readme",
+  "dependencies": {
+    "luja": "^0.2.7"
+  }
+}

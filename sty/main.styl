@@ -1,0 +1,25 @@
+
+vendor-prefixes ?= webkit moz o ms official
+
+// needed
+@import guide
+@import vendor
+@import mixins
+//@import /inc/*
+
+c = {}
+for key, value in data.colors
+  c[key] = convert(value)
+
+.clear
+  clearfix()
+
+body
+  margin 0
+  padding 0
+  background-color: c.white1
+  color: c.black1
+  font f_copy
+
+.container
+  background-color: c.grey1

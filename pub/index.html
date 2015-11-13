@@ -1,0 +1,48 @@
+
+<html lang="en">
+  <head>
+    <title>BronSec Inc</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="all"/>
+    <script type="text/javascript" src="/jst/loader.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clear"></div>
+      <div class="top">
+        <div class="inner">
+          <div class="logo">160x40</div>
+          <div class="divider"></div>
+          <div class="title">Welcome to Luja</div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function loadercomplete() {
+        Loader.load('./jst/index.js', 'Index');
+        //Global.i()
+      }
+    </script>
+    <div class="spinner off">
+      <svg viewbox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+    <script type="text/javascript">
+      Loader.scripts.jst_lib.push('jquery-2.1.4.min');
+      Loader.scripts.jst.push('main');
+      Loader.i( function(result) {
+        if (result) {
+          if (typeof(loadercomplete) === 'function') {
+            loadercomplete();
+          }
+        }
+      });
+      
+    </script>
+  </body>
+</html>

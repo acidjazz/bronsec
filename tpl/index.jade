@@ -1,0 +1,19 @@
+extends inc/layout
+
+block content
+  .container
+    .clear
+
+    .top
+      .inner
+        .logo 160x40
+        .divider
+        .title Welcome to Luja
+        .clear
+      .clear
+
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('./jst/index.js', 'Index');
+      //Global.i()
+    }

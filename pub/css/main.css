@@ -1,0 +1,84 @@
+.guide {
+  padding: 50px 0 0 0;
+  background-color: #fff;
+}
+.guide > .title {
+  font: 32px Bookman Old Style, Verdana;
+  padding: 0 0 0 50px;
+  text-transform: uppercase;
+}
+.guide > .sections {
+  padding: 20px;
+}
+.guide > .sections > .section {
+  width: 33%;
+  float: left;
+}
+.guide > .sections > .section > .color {
+  padding: 10px 20px;
+  margin: 5px;
+}
+.guide > .sections > .section > .color.color_black1 {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.guide > .sections > .section > .color.color_white1 {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_grey1 {
+  background-color: #f2f2f2;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_grey2 {
+  background-color: #ededed;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_purple1 {
+  background-color: #d300ff;
+  border: 1px solid #000;
+  color: #000;
+}
+.guide > .sections > .section > .color.color_purple2 {
+  background-color: #76009b;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.guide > .sections > .section > .font {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.guide > .sections > .section > .font.font_f_copy {
+  font: 16px Bookman Old Style, Verdana;
+}
+.guide > .sections > .section > .font.font_f_h1 {
+  font: 32px Bookman Old Style, Verdana;
+}
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font: 16px Bookman Old Style, Verdana;
+}
+.container {
+  background-color: #f2f2f2;
+}
