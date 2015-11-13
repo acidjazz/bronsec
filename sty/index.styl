@@ -7,12 +7,28 @@
     height 178px
     margin auto
     background-size cover
-  > .about
+  > .section
+    border-top: 1px solid c.grey1
     padding 20px 60px
-    max-width 960px
-    margin auto
     font-size 20px
     line-height 30px
+    > .inner
+      max-width 960px
+      margin auto
+    &.about > .inner > .copy
+      float left
+      width 50%
+    &.about > .inner > .photo
+      float left
+      height 650px
+      width 50%
+      > .inner
+        background-image url(/img/josha-suit.jpg)
+        margin 20px
+        height 100%
+        background-size contain
+        background-repeat no-repeat
+        background-position 50% 50%
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .index
@@ -24,7 +40,7 @@
       background-repeat no-repeat
       background-position 50% 50%
 
-    > .about
+    > .section
       padding 0px 20px
       line-height 20px
       font-size 18px

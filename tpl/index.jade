@@ -4,10 +4,19 @@ block content
   .index 
     .logo
 
-    .about
-      .copy
-        each p in data.about.copy
-          p=p
+    .landing.section
+      .inner
+        .copy
+          each p in data.landing.copy
+            p=p
+
+    .about.section
+      .inner
+        .photo
+          .inner
+        .copy
+          each p in data.about.copy
+            p=p
 
 
   script(type='text/javascript').
