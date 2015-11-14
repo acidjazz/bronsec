@@ -3,18 +3,24 @@ var Index;
 Index = {
   i: function() {
     console.log('Index.i()');
-    return Index.handlers();
+    Index.handlers();
+    if (location.hash !== '') {
+      return Index.menu(location.hash.replace('#', ''));
+    }
   },
   handlers: function() {
-    return $('.logo, .menu > .item').on('click', Index.menu);
+    return $('.logo, .menu > .item').on('click', Index.menuHandler);
   },
-  menu: function() {
-    var section;
-    section = $(".section." + ($(this).data('section')));
+  menu: function(section) {
+    var sectionEl;
+    sectionEl = $(".section." + section);
     $('html, body').animate({
-      scrollTop: section.offset().top - 74
+      scrollTop: sectionEl.offset().top - 74
     }, 200);
-    $('.menu > .item').removeClass('active');
-    return $(this).addClass('active');
+    $('.menu > .item, .logo').removeClass('active');
+    return $(".i_" + section).addClass('active');
+  },
+  menuHandler: function() {
+    return Index.menu($(this).data('section'));
   }
 };

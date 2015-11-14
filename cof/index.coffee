@@ -6,20 +6,25 @@ Index =
 
     Index.handlers()
 
+    if location.hash isnt ''
+      Index.menu location.hash.replace '#', ''
+
   handlers: ->
 
-    $('.logo, .menu > .item').on 'click', Index.menu
+    $('.logo, .menu > .item').on 'click', Index.menuHandler
 
 
-  menu: ->
+  menu: (section) ->
 
-    section = $(".section.#{$(this).data('section')}")
+    sectionEl = $(".section.#{section}")
 
     $('html, body').animate(
-      scrollTop: section.offset().top - 74
+      scrollTop: sectionEl.offset().top - 74
     , 200)
 
 
-    $('.menu > .item').removeClass 'active'
-    $(this).addClass 'active'
+    $('.menu > .item, .logo').removeClass 'active'
+    $(".i_#{section}").addClass 'active'
 
+  menuHandler: ->
+    Index.menu $(this).data 'section'
