@@ -6,9 +6,9 @@
     font-size 20px
     line-height 30px
     > .logo
-      background-image url(/img/bronsec.png)
-      width 578px
-      height 178px
+      background-image url(/img/half.png)
+      width 755px
+      height 200px
       margin 60px auto 0 auto
       background-size cover
       animation cellInY 0.2s linear 0.1s both
@@ -74,6 +74,10 @@
       > g circle, > g path, > g 
         fill: c.purple3
 
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
+  .index > .section > .logo
+    background-image url(/img/full.png)
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .index
