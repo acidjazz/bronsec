@@ -105,6 +105,25 @@
 .header > .inner > .logo.active {
   border-bottom: 3px solid #d300ff;
 }
+.header > .inner > .contact {
+  display: block;
+  float: right;
+  background-color: #530070;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 17px 20px 0 0;
+  font: 18px Bookman Old Style, Verdana;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.header > .inner > .contact:hover {
+  background-color: #8400a6;
+}
 .header > .inner > .menu {
   float: left;
   margin: 0 0 -2px 20px;
@@ -1039,10 +1058,10 @@ body {
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
-    padding: 110px 10px 10px 10px;
+    padding: 74px 10px 20px 10px;
   }
   .index > .section > .inner {
-    padding: 0px 20px;
+    padding: 60px 10px;
     line-height: 20px;
   }
   .index > .section > .logo {
@@ -1053,7 +1072,7 @@ body {
     background-size: 115%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin: 60px auto 60px auto;
+    margin: 60px auto 30px auto;
   }
   .index > .section.about > .inner > .copy {
     width: 100%;
