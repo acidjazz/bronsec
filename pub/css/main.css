@@ -80,7 +80,7 @@
   margin: 0 0 10px 0;
   position: fixed;
   width: 100%;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   -webkit-animation: cellInX 0.2s linear 0s both;
   -moz-animation: cellInX 0.2s linear 0s both;
   -o-animation: cellInX 0.2s linear 0s both;
@@ -97,6 +97,11 @@
   width: 50px;
   height: 50px;
   padding: 10px 0;
+  -webkit-animation: cellInX 0.2s linear 0.1s both;
+  -moz-animation: cellInX 0.2s linear 0.1s both;
+  -o-animation: cellInX 0.2s linear 0.1s both;
+  -ms-animation: cellInX 0.2s linear 0.1s both;
+  animation: cellInX 0.2s linear 0.1s both;
 }
 .header > .inner > .logo > svg {
   width: inherit;
@@ -150,6 +155,38 @@
 .header > .inner > .menu > .item.active {
   font-weight: bold;
   border-bottom: 3px solid #d300ff;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .header {
+    padding: 0 10px;
+  }
+  .header > .inner > .menu {
+    margin: 0 0 -2px 5px;
+  }
+  .header > .inner > .menu > .item {
+    font-size: 18px;
+    margin: 0 2px;
+    padding: 25px 5px 21px 5px;
+  }
+  .header > .inner > .contact {
+    margin: 17px 30px 0 0;
+    padding: 10px;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 360px) {
+  .header {
+    padding: 0;
+  }
+  .header > .inner > .menu {
+    margin: 0 0 -2px 5px;
+  }
+  .header > .inner > .menu > .item {
+    font-size: 14px;
+  }
+  .header > .inner > .contact {
+    font-size: 14px;
+    margin: 17px 10px 0 0;
+  }
 }
 @-moz-keyframes fadeIn {
   from {
@@ -961,6 +998,11 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  -webkit-animation: cellInY 0.2s linear 0.1s both;
+  -moz-animation: cellInY 0.2s linear 0.1s both;
+  -o-animation: cellInY 0.2s linear 0.1s both;
+  -ms-animation: cellInY 0.2s linear 0.1s both;
+  animation: cellInY 0.2s linear 0.1s both;
 }
 .index > .section > .inner {
   max-width: 960px;
@@ -1074,11 +1116,22 @@ body {
     background-position: 50% 50%;
     margin: 60px auto 30px auto;
   }
+  .index > .section.services > .inner > .service > .inner > .icon {
+    width: 50px;
+    height: 50px;
+  }
   .index > .section.about > .inner > .copy {
     width: 100%;
   }
   .index > .section.about > .inner > .photo {
     width: 100%;
     height: 350px;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 360px) {
+  .index > .section > .logo {
+    width: 275px;
+    height: 82px;
+    margin: 30px auto 0 auto;
   }
 }
