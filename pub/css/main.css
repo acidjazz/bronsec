@@ -96,6 +96,9 @@
   width: inherit;
   height: inherit;
 }
+.header > .inner > .logo.active {
+  border-bottom: 3px solid #d300ff;
+}
 .header > .inner > .menu {
   float: left;
   margin: 0 0 -2px 20px;
