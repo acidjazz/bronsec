@@ -80,7 +80,7 @@
   margin: 0 0 10px 0;
   position: fixed;
   width: 100%;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255,0.5);
 }
 .header > .inner {
   max-width: 1200px;
@@ -113,6 +113,8 @@
   -ms-transition: border 0.2s linear;
   transition: border 0.2s linear;
   border-bottom: 1px solid transparent;
+  color: #530070;
+  text-decoration: none;
 }
 .header > .inner > .menu > .item:hover {
   border-bottom: 3px solid rgba(211,0,255,0.25);
@@ -380,7 +382,7 @@ body {
 }
 .index {
   min-height: 2000px;
-  padding: 70px 20px 20px 20px;
+  padding: 74px 20px 20px 20px;
 }
 .index > .section {
   border-top: 1px solid #f2f2f2;
@@ -429,6 +431,7 @@ body {
 .index > .section.services > .inner > .service > .inner > .title {
   font: f_copyb;
   font-weight: bold;
+  color: #530070;
 }
 .index > .section.services > .inner > .service > .inner > .icon {
   width: 100px;

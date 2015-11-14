@@ -1,11 +1,11 @@
 
 .header
   .inner
-    .logo
+    a.logo(href='#home',data-section='home')
       include ../../pub/svg/logo.svg
 
     .menu
-      .item.active about
-      .item services
+      a.item(href='#services',data-section='services') services
+      a.item(href='#about',data-section='about') about
 
     .clear
