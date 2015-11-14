@@ -15,6 +15,10 @@
       max-width 960px
       margin auto
       padding 60px
+    &.home
+      animation cellInY 0.2s linear 0s both
+    &.about
+      animation cellInY 0.2s linear 0.5s both
     &.about > .inner > .copy
       float left
       width 50%
@@ -48,6 +52,12 @@
             width inherit
             height inherit
    
+    &.services > .inner > .service:nth-child(1)
+      animation cellInY 0.2s linear 0.2s both
+    &.services > .inner > .service:nth-child(2)
+      animation cellInY 0.2s linear 0.3s both
+    &.services > .inner > .service:nth-child(3)
+      animation cellInY 0.2s linear 0.4s both
     &.services > .inner > .service:nth-child(1) > .inner > .icon > svg
       > g circle, > g path, > g 
         fill: c.purple3
