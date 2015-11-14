@@ -991,9 +991,9 @@ body {
   line-height: 30px;
 }
 .index > .section > .logo {
-  background-image: url("/img/bronsec.png");
-  width: 578px;
-  height: 178px;
+  background-image: url("/img/half.png");
+  width: 755px;
+  height: 200px;
   margin: 60px auto 0 auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1104,6 +1104,11 @@ body {
 .index > .section.services > .inner > .service:nth-child(3) > .inner > .icon > svg > g path,
 .index > .section.services > .inner > .service:nth-child(3) > .inner > .icon > svg > g {
   fill: #8400a6;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .index > .section > .logo {
+    background-image: url("/img/full.png");
+  }
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
