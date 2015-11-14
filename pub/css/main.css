@@ -949,11 +949,11 @@ body {
   padding: 60px;
 }
 .index > .section.home {
-  -webkit-animation: cellInY 0.2s linear 0s both;
-  -moz-animation: cellInY 0.2s linear 0s both;
-  -o-animation: cellInY 0.2s linear 0s both;
-  -ms-animation: cellInY 0.2s linear 0s both;
-  animation: cellInY 0.2s linear 0s both;
+  -webkit-animation: cellInY 0.2s linear 0.1s both;
+  -moz-animation: cellInY 0.2s linear 0.1s both;
+  -o-animation: cellInY 0.2s linear 0.1s both;
+  -ms-animation: cellInY 0.2s linear 0.1s both;
+  animation: cellInY 0.2s linear 0.1s both;
 }
 .index > .section.about {
   -webkit-animation: cellInY 0.2s linear 0.5s both;
