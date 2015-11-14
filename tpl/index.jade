@@ -2,9 +2,9 @@ extends inc/layout
 
 block content
   .index 
-    .logo
 
     .landing.section
+      .logo
       .inner
         .copy
           each p in data.landing.copy
@@ -18,15 +18,35 @@ block content
           each p in data.about.copy
             p=p
         .clear
+      .clear
+    .clear
 
-    .services.section
+    .section.services
       .inner
-        each service in data.services
-          .service
-            .title=service.name
-            ul
-            each item in service.services
-              li=item
+        - var service = data.services[0]
+        .service
+          .icon
+            include ../pub/svg/strategic.svg
+          .title=service.name
+          ul
+          each item in service.services
+            li=item
+        - var service = data.services[1]
+        .service
+          .icon
+            include ../pub/svg/compliance.svg
+          .title=service.name
+          ul
+          each item in service.services
+            li=item
+        - var service = data.services[2]
+        .service
+          .icon
+            include ../pub/svg/testing.svg
+          .title=service.name
+          ul
+          each item in service.services
+            li=item
 
 
   script(type='text/javascript').

@@ -370,26 +370,26 @@ body {
 }
 .index {
   min-height: 2000px;
-  padding: 80px 20px 20px 20px;
+  padding: 70px 20px 20px 20px;
 }
-.index > .logo {
+.index > .section {
+  border-top: 1px solid #f2f2f2;
+  font-size: 20px;
+  line-height: 30px;
+}
+.index > .section > .logo {
   background-image: url("/img/bronsec.png");
   width: 578px;
   height: 178px;
-  margin: auto;
+  margin: 60px auto 0 auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-.index > .section {
-  border-top: 1px solid #f2f2f2;
-  padding: 20px 60px;
-  font-size: 20px;
-  line-height: 30px;
-}
 .index > .section > .inner {
   max-width: 960px;
   margin: auto;
+  padding: 60px;
 }
 .index > .section.about > .inner > .copy {
   float: left;
@@ -399,16 +399,29 @@ body {
   float: left;
   height: 350px;
   width: 50%;
+  overflow: hidden;
 }
 .index > .section.about > .inner > .photo > .inner {
   background-image: url("/img/josha-suit.jpg");
   margin: 20px;
-  height: 100%;
+  height: 350px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 18%;
+}
+.index > .section.services > .inner > .service {
+  width: 33.333%;
+  float: left;
+}
+.index > .section.services > .inner > .service > .icon {
+  width: 100px;
+  height: 100px;
+}
+.index > .section.services > .inner > .service > .icon > svg {
+  width: inherit;
+  height: inherit;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
