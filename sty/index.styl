@@ -20,13 +20,13 @@
       width 50%
     &.about > .inner > .photo
       float left
-      height 350px
+      height 650px
       width 50%
       overflow hidden
       > .inner
         background-image url(/img/josha-suit.jpg)
         margin 20px
-        height 350px
+        height 100%
         background-size cover
         background-repeat no-repeat
         background-position 50% 18%
@@ -62,14 +62,20 @@
 @media all and (min-width: 1px) and (max-width: 1000px)
   .index
     padding 110px 10px 10px 10px
-    > .logo
-      width 375px
-      height 110px
-      background-size 115%
-      background-repeat no-repeat
-      background-position 50% 50%
-
     > .section
-      padding 0px 20px
-      line-height 20px
-  
+      > .inner
+        padding 0px 20px
+        line-height 20px
+      > .logo
+        width 375px
+        height 110px
+        background-size 115%
+        background-repeat no-repeat
+        background-position 50% 50%
+        margin 60px auto 60px auto
+      &.about > .inner > .copy
+        width 100%
+      &.about > .inner > .photo
+        width 100%
+        height 350px
+
