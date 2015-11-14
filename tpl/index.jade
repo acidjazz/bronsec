@@ -17,6 +17,16 @@ block content
         .copy
           each p in data.about.copy
             p=p
+        .clear
+
+    .services.section
+      .inner
+        each service in data.services
+          .service
+            .title=service.name
+            ul
+            each item in service.services
+              li=item
 
 
   script(type='text/javascript').
