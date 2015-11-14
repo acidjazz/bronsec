@@ -25,28 +25,31 @@ block content
       .inner
         - var service = data.services[0]
         .service
-          .icon
-            include ../pub/svg/strategic.svg
-          .title=service.name
-          ul
-          each item in service.services
-            li=item
+          .inner
+            .icon
+              include ../pub/svg/strategic.svg
+            .title=service.name
+            ul
+            each item in service.services
+              li=item
         - var service = data.services[1]
         .service
-          .icon
-            include ../pub/svg/compliance.svg
-          .title=service.name
-          ul
-          each item in service.services
-            li=item
+          .inner
+            .icon
+              include ../pub/svg/compliance.svg
+            .title=service.name
+            ul
+            each item in service.services
+              li=item
         - var service = data.services[2]
         .service
-          .icon
-            include ../pub/svg/testing.svg
-          .title=service.name
-          ul
-          each item in service.services
-            li=item
+          .inner
+            .icon
+              include ../pub/svg/testing.svg
+            .title=service.name
+            ul
+            each item in service.services
+              li=item
 
 
   script(type='text/javascript').
