@@ -10,17 +10,6 @@ block content
           each p in data.landing.copy
             p=p
 
-    .about.section
-      .inner
-        .photo
-          .inner
-        .copy
-          each p in data.about.copy
-            p=p
-        .clear
-      .clear
-    .clear
-
     .section.services
       .inner
         - var service = data.services[0]
@@ -51,6 +40,19 @@ block content
             each item in service.services
               li=item
 
+
+
+
+    .about.section
+      .inner
+        .photo
+          .inner
+        .copy
+          each p in data.about.copy
+            p=p
+        .clear
+      .clear
+    .clear
 
   script(type='text/javascript').
     function loadercomplete() {

@@ -44,7 +44,17 @@
   color: #000;
 }
 .guide > .sections > .section > .color.color_purple2 {
-  background-color: #76009b;
+  background-color: #af00da;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.guide > .sections > .section > .color.color_purple3 {
+  background-color: #8400a6;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.guide > .sections > .section > .color.color_purple4 {
+  background-color: #530070;
   border: 1px solid #fff;
   color: #fff;
 }
@@ -428,6 +438,21 @@ body {
 .index > .section.services > .inner > .service > .inner > .icon > svg {
   width: inherit;
   height: inherit;
+}
+.index > .section.services > .inner > .service:nth-child(1) > .inner > .icon > svg > g circle,
+.index > .section.services > .inner > .service:nth-child(1) > .inner > .icon > svg > g path,
+.index > .section.services > .inner > .service:nth-child(1) > .inner > .icon > svg > g {
+  fill: #8400a6;
+}
+.index > .section.services > .inner > .service:nth-child(2) > .inner > .icon > svg > g circle,
+.index > .section.services > .inner > .service:nth-child(2) > .inner > .icon > svg > g path,
+.index > .section.services > .inner > .service:nth-child(2) > .inner > .icon > svg > g {
+  fill: #af00da;
+}
+.index > .section.services > .inner > .service:nth-child(3) > .inner > .icon > svg > g circle,
+.index > .section.services > .inner > .service:nth-child(3) > .inner > .icon > svg > g path,
+.index > .section.services > .inner > .service:nth-child(3) > .inner > .icon > svg > g {
+  fill: #8400a6;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index {
