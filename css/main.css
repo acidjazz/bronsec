@@ -87,6 +87,7 @@
   -ms-animation: cellInX 0.2s linear 0s both;
   animation: cellInX 0.2s linear 0s both;
   z-index: 10;
+  height: 74px;
 }
 .header > .inner {
   max-width: 1200px;
@@ -96,7 +97,7 @@
   float: left;
   width: 50px;
   height: 50px;
-  padding: 10px 0;
+  padding: 10px 0 13px 0;
   -webkit-animation: cellInX 0.2s linear 0.1s both;
   -moz-animation: cellInX 0.2s linear 0.1s both;
   -o-animation: cellInX 0.2s linear 0.1s both;
@@ -136,7 +137,7 @@
 .header > .inner > .menu > .item {
   cursor: pointer;
   display: inline-block;
-  padding: 25px 10px 21px 10px;
+  padding: 25px 10px 19px 10px;
   margin: 0 10px;
   font: 24px Bookman Old Style, Verdana;
   text-transform: uppercase;
@@ -166,7 +167,7 @@
   .header > .inner > .menu > .item {
     font-size: 18px;
     margin: 0 2px;
-    padding: 25px 5px 21px 5px;
+    padding: 28px 5px 24px 5px;
   }
   .header > .inner > .contact {
     margin: 17px 30px 0 0;
@@ -182,10 +183,11 @@
   }
   .header > .inner > .menu > .item {
     font-size: 14px;
+    padding: 30px 5px 27px 5px;
   }
   .header > .inner > .contact {
     font-size: 14px;
-    margin: 17px 10px 0 0;
+    margin: 20px 10px 0 0;
   }
 }
 @-moz-keyframes fadeIn {
@@ -982,7 +984,6 @@ body {
   background-color: #fff;
 }
 .index {
-  min-height: 2000px;
   padding: 74px 20px 20px 20px;
 }
 .index > .section {
@@ -1111,9 +1112,6 @@ body {
   }
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
-  .index {
-    padding: 74px 10px 20px 10px;
-  }
   .index > .section > .inner {
     padding: 60px 10px;
     line-height: 20px;
