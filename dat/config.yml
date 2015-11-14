@@ -3,6 +3,7 @@ index: true
 meta: 
   title: "BronSec Inc"
   description: "Strategic Security Solutions"
-  image: '/img/logo1.png'
+  keywords: "security, solutions"
+  image: "/img/logo1.png"
 sections: 
   - "guide"
