@@ -411,12 +411,10 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 18%;
 }
-.index > .section.services > .inner > .service {
-  width: 33.333%;
-  float: left;
-}
 .index > .section.services > .inner > .service > .inner {
-  padding: 10px;
+  margin: 0 0 60px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 .index > .section.services > .inner > .service > .inner > .title {
   font: f_copyb;
@@ -425,6 +423,7 @@ body {
 .index > .section.services > .inner > .service > .inner > .icon {
   width: 100px;
   height: 100px;
+  float: right;
 }
 .index > .section.services > .inner > .service > .inner > .icon > svg {
   width: inherit;
