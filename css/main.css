@@ -173,7 +173,7 @@
     padding: 10px;
   }
 }
-@media all and (min-width: 1px) and (max-width: 360px) {
+@media all and (min-width: 1px) and (max-width: 380px) {
   .header {
     padding: 0;
   }
@@ -1121,9 +1121,9 @@ body {
   .index > .section > .logo {
     width: 375px;
     height: 110px;
-    -webkit-background-size: 115%;
-    -moz-background-size: 115%;
-    background-size: 115%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin: 60px auto 30px auto;
@@ -1140,9 +1140,9 @@ body {
     height: 350px;
   }
 }
-@media all and (min-width: 1px) and (max-width: 360px) {
+@media all and (min-width: 1px) and (max-width: 380px) {
   .index > .section > .logo {
-    width: 275px;
+    width: 295px;
     height: 82px;
     margin: 30px auto 0 auto;
   }
