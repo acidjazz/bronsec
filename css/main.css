@@ -1053,6 +1053,13 @@ body {
   font-weight: bold;
   color: #530070;
 }
+.index > .section.services > .inner > .service > .inner > ul {
+  padding: 10px 0 20px 20px;
+  margin: 0;
+}
+.index > .section.services > .inner > .service > .inner > ul > li {
+  padding: 5px 0;
+}
 .index > .section.services > .inner > .service > .inner > .icon {
   width: 100px;
   height: 100px;
