@@ -2,9 +2,27 @@ html(lang='en')
   head
     title #{data.config.meta.title}
 
+    meta(http-equiv="X-UA-Compatible",content="IE=Edge,chrome=1")
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
+
     meta(name='title' content=data.config.meta.title)
     meta(name='description',content=data.config.meta.description)
     meta(name='keywords',content=data.config.meta.keywords)
+
+    script(type='application/ld+json').
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "BronSec Inc",
+        "description": "Information security consulting for startups including security reviews, penetration testing and compliance",
+        "url": "http://www.bronsec.com/",
+        "logo": "http://www.bronsec.com/img/share.png",
+        "sameAs" : [
+          "http://www.linkedin.com/bronsec"
+          ]
+        }
+      }
 
     meta(name='og:url', content='http://www.bronsec.com/')
     meta(name='og:title', content=data.config.meta.title)
@@ -16,9 +34,7 @@ html(lang='en')
     meta(name='twitter:title',content=data.config.meta.title)
     meta(name='twitter:description',content=data.config.meta.description)
     meta(name='twitter:image',content=data.config.meta.image) 
-    meta(http-equiv="X-UA-Compatible",content="IE=Edge,chrome=1")
-    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
+
     link(rel='stylesheet',href="/css/main.css",type='text/css',media='all')
 
     script(type='text/javascript').
